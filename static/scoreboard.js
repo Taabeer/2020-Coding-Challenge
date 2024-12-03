@@ -32,7 +32,7 @@ function increase_score(id){
     contentType: "application/json; charset=utf-8",
     data : JSON.stringify(team_id),
     success: function(result){
-        var updatedScoreboard= result.scoreboard;
+      var updatedScoreboard= result.scoreboard;
       $.each(updatedScoreboard, function(index, team)
       {
         if (team.id===id)
